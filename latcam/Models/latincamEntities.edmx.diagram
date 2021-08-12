@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b455f98c81d54b569778a920466af43a" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="latincamdevModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="2.75" />
+        <EntityTypeShape EntityType="latincamdevModel.AccountType" Width="1.5" PointX="10.25" PointY="4.125" />
+        <EntityTypeShape EntityType="latincamdevModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="latincamdevModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="1.875" />
+        <EntityTypeShape EntityType="latincamdevModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="4.625" />
+        <EntityTypeShape EntityType="latincamdevModel.AspNetUsers" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="latincamdevModel.ConektaCards" Width="1.5" PointX="0.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="latincamdevModel.Profile" Width="1.5" PointX="5.625" PointY="7.375" />
+        <EntityTypeShape EntityType="latincamdevModel.Streaming" Width="1.5" PointX="7.75" PointY="0.5" />
+        <EntityTypeShape EntityType="latincamdevModel.StreamingCamera" Width="1.5" PointX="9.875" PointY="0.5" />
+        <EntityTypeShape EntityType="latincamdevModel.Subscriptions" Width="1.5" PointX="7.75" PointY="3.25" />
+        <AssociationConnector Association="latincamdevModel.FK_Subscriptions_AccountType" />
+        <AssociationConnector Association="latincamdevModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="latincamdevModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="latincamdevModel.FK_Profile_AspNetUsers" />
+        <AssociationConnector Association="latincamdevModel.FK_Subscriptions_AspNetUsers" />
+        <AssociationConnector Association="latincamdevModel.FK_StreamingCamera_Streaming" />
+        <AssociationConnector Association="latincamdevModel.AspNetUserRoles" />
+        <EntityTypeShape EntityType="latincamdevModel.ConektaUsers" Width="1.5" PointX="0.75" PointY="7.25" />
+        <AssociationConnector Association="latincamdevModel.FK_ConektaUsers_AspNetUsers" />
+        <AssociationConnector Association="latincamdevModel.FK_ConektaCards_ConektaUsers" />
+        <EntityTypeShape EntityType="latincamdevModel.Favorites" Width="1.5" PointX="11.875" PointY="2.125" />
+        <EntityTypeShape EntityType="latincamdevModel.StreamingLikes" Width="1.5" PointX="0.75" PointY="0.5" />
+        <AssociationConnector Association="latincamdevModel.FK_StreamingLikes_AspNetUsers" />
+        <EntityTypeShape EntityType="latincamdevModel.CamerasSuggestions" Width="1.5" PointX="5.625" PointY="10.25" />
+        <EntityTypeShape EntityType="latincamdevModel.StreamingSuggestions" Width="1.5" PointX="2.25" PointY="9.75" />
+        <AssociationConnector Association="latincamdevModel.FK_CamerasSuggestions_AspNetUsers" />
+        <AssociationConnector Association="latincamdevModel.FK_StreamingSuggestions_AspNetUsers" />
+        <EntityTypeShape EntityType="latincamdevModel.TopActiveRandomStreamingView" Width="1.5" PointX="16.5" PointY="5" />
+        <EntityTypeShape EntityType="latincamdevModel.TopMostLikeStreamingView" Width="1.5" PointX="16.5" PointY="7.25" />
+        <EntityTypeShape EntityType="latincamdevModel.TopMostRatedStreamingView" Width="1.5" PointX="16.5" PointY="0.5" />
+        <EntityTypeShape EntityType="latincamdevModel.TopMostSuggestStreamingView" Width="1.5" PointX="16.5" PointY="2.75" />
+        <EntityTypeShape EntityType="latincamdevModel.TopViewsStreamingView" Width="1.5" PointX="16.5" PointY="9.5" />
+        <EntityTypeShape EntityType="latincamdevModel.TopViewsCamerasView" Width="1.5" PointX="18.25" PointY="0.5" />
+        <EntityTypeShape EntityType="latincamdevModel.CurrentUsers" Width="1.5" PointX="7.75" PointY="7.25" />
+        <AssociationConnector Association="latincamdevModel.FK_CurrenUsers_Users" />
+        <EntityTypeShape EntityType="latincamdevModel.CameraLikes" Width="2.125" PointX="11.875" PointY="0.5" />
+        <EntityTypeShape EntityType="latincamdevModel.StreamingRatings" Width="1.5" PointX="8.5" PointY="9.5" />
+        <AssociationConnector Association="latincamdevModel.FK_StreamingRatings_AspNetUsers" />
+        <EntityTypeShape EntityType="latincamdevModel.CameraRatings" Width="1.5" PointX="12.75" PointY="4" />
+        <EntityTypeShape EntityType="latincamdevModel.PaypalPlans" Width="1.5" PointX="11.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
